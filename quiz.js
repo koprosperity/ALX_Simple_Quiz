@@ -8,7 +8,7 @@ function checkAnswer() {
     
     // Step 4: Check if an answer was selected
     if (userAnswer) {
-        // Step 5: Compare userAnswer with correctAnswer
+        // Step 5: Compare userAnswer.value with correctAnswer (ensure .value is used)
         if (userAnswer.value === correctAnswer) {
             // Step 6: Display correct feedback
             document.getElementById('feedback').textContent = "Correct! Well done.";
